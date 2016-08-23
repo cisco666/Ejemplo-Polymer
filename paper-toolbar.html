@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`paper-toolbar`
+toolbar
+
+@demo demo/index.html 
+-->
+
+<dom-module id="paper-toolbar">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'paper-toolbar',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'paper-toolbar',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
